@@ -1,0 +1,33 @@
+# requirements.txt
+
+# Core Data Handling & Numerics
+pandas>=1.3.0
+numpy>=1.20.0
+
+# Machine Learning & Deep Learning
+scikit-learn>=1.0.0
+torch>=1.10.0   # Consider specifying torchvision and torchaudio if needed, or let torch handle them.
+# torchvision>=0.11.0 # Often goes with torch, uncomment if needed
+# torchaudio>=0.10.0  # Often goes with torch, uncomment if needed
+
+# Hyperparameter Optimization
+optuna>=2.10.0
+
+# Utilities
+joblib>=1.0.0
+tqdm>=4.60.0
+
+# Specific Model Libraries
+# CRITICAL: Update this line based on how momentfm is actually installed.
+# If from PyPI:
+momentfm>=0.1.0 # Replace with actual version if known
+# If from a Git repo (example):
+# git+https://github.com/AutonLab/MOMENT.git#egg=momentfm 
+# (Check the actual URL for MOMENT if it's the one from AutonLab)
+
+# Optional for plotting (useful for notebooks, not strictly required by core library)
+matplotlib>=3.4.0
+
+# For running tests (can be in a separate requirements-dev.txt)
+pytest>=7.0.0
+pytest-mock>=3.5.0
